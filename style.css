@@ -112,6 +112,10 @@ header h1 {
     color:#70958b;
 }
 
+.links2 a i {
+    transition: transform .7s ease-in-out;
+}
+
 .links2 a:hover i{
     transition: 0.9s;
     transform: rotateY(180deg);
@@ -140,7 +144,7 @@ header h1 {
 
 .section:nth-child(2n) {
     background:#6f958c;
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
 .section:last-of-type {
@@ -186,7 +190,7 @@ header h1 {
     text-align: justify;
     font-size: 1.2em;
     color: #fff;
-    margin-right:100px;
+    margin-right:120px;
 }
 
 .section .button {
@@ -227,7 +231,6 @@ header h1 {
     margin-bottom:15px;
     font-weight:bold;
     letter-spacing:.5px;
-    color:#275257;
 }
 
 .b-links a:hover {
@@ -250,6 +253,10 @@ header h1 {
     justify-content: center;
     border-radius: 5px;
     font-size: 1.5em;
+}
+
+.b-buttons a i {
+    transition: transform .7s ease-in-out;
 }
 
 .b-buttons a:hover i{
