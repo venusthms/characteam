@@ -24,13 +24,13 @@
 <header>
 
 <div class="title">
-<img src="https://i.imgur.com/J1STe1G.png" />
+<img src="https://i.imgur.com/fXlvQLm.png" />
 <h1>Characteam</h1>
 </div>
 
 <div class="links">
 
-<a href="/">Die Idee</a>
+<a href="/">Über uns</a>
 <a href="/">Warum Characteam</a>
 <a href="/">Testteam werden</a>
 </div>
@@ -38,9 +38,16 @@
 <div class="links2">
 <a href="/" title="Starseite"><i class="icons fa-solid fa-house"></i></a>
 <a href="mailto:hello@characteam.de" title="Kontakt"><i class="icons fa-regular fa-envelope"></i></a>
+<a class="mobile-menu" href="#" title="Menü"><i class="icons fa-solid fa-bars"></i></a>
 </div>
 
 </header>
+
+<div class="menu">
+<a href="/">Über uns</a>
+<a href="/">Warum Characteam</a>
+<a href="/">Testteam werden</a>
+</div>
 
 
 <div class="section-wrapper">
@@ -71,7 +78,7 @@
 
 <div class="logo">
 <h5>Characteam</h5>
-<img src="https://i.imgur.com/J1STe1G.png"/>
+<img src="https://i.imgur.com/fXlvQLm.png"/>
 </div>
 
 <div class="b-links">
@@ -107,9 +114,25 @@
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
+
+$('.mobile-menu').click(function() {
+    $('.menu').slideToggle( "slow" );
+    $('.mobile-menu i').toggleClass('fa-bars fa-xmark');
+    return false;
+    });
+    
+   $(window).resize(function() {
+      if ( $(window).width() >= 901 ){
+       $('.menu').slideUp( "slow" );
+        $('.mobile-menu i').removeClass('fa-xmark');
+         $('.mobile-menu i').addClass('fa-bars');
+      }
+   });
+
  
 });
 </script>
+
 
 </body>
 </html>
