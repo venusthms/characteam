@@ -1,7 +1,10 @@
+/* controls */
+iframe.tmblr-iframe {display:none;}
+
 body {
 background: #fff;
 color: #275257;
-font-family: 'Karla';
+font-family: 'Segoe UI', sans-serif;
 font-size:12px;
 cursor: default;
 overflow-x:hidden;
@@ -26,6 +29,7 @@ header {
     box-sizing:border-box;
     box-shadow:0 6px 6px -4px rgba(0,0,0,.08);
     z-index:999;
+    justify-content: space-between;
 
 }
 
@@ -36,34 +40,35 @@ header {
 }
 
 .title {
-    width: calc(100% / 3);
     justify-content: flex-start;
     box-sizing:border-box;
-    padding-left:20px;
+    padding-left:30px;
+    width:260px;
 }
 
 .links {
-    width: calc(100% / 3);
     justify-content: space-around;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 1.2em;
+    max-width:calc(100% - 260px - 160px - 20px);
+    box-sizing:border-box;
     
 }
 
 .links2 {
-    width: calc(100% / 3);
-    justify-content: flex-end
+    justify-content: flex-end;
+    width:20vh;
 }
 
 header img {
-    height: 7vh;
+    height: 7.5vh;
     width:auto;
     margin-right:25px;
     border-radius:4px;
 }
 
 header h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     color: #275257;
     text-transform: uppercase;
     font-size: 1.8em;
@@ -76,8 +81,12 @@ header h1 {
 
 .links a {
     color:#265157;
-    margin-right:10px;
-    font-weight:bold;
+    margin-right:50px;
+    font-weight:500;
+}
+
+.links a:last-of-type {
+    margin-right:0;
 }
 
 .links2 a {
@@ -122,7 +131,6 @@ header h1 {
 }
 
 .section-wrapper {
-    background: green;
     width: 100vw;
     height: auto;
     position: absolute;
@@ -169,7 +177,7 @@ header h1 {
 
 .right h1 {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     letter-spacing: 1px;
     color: #275257;
     font-size: 3em;
@@ -211,16 +219,16 @@ header h1 {
 }
 
 .section .logo img {
-    width: 80px;
+    width: 85px;
     border-radius: 4px;
     display:block;
-    margin:auto auto auto 0;
+    margin:15px auto auto 0;
 }
 
 .logo {
     text-transform: uppercase;
     letter-spacing:1px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     text-align:center;
     font-weight:bold;
 }
@@ -229,7 +237,7 @@ header h1 {
     display:block;
     text-align:left;
     margin-bottom:15px;
-    font-weight:bold;
+    font-weight:500;
     letter-spacing:.5px;
 }
 
@@ -293,4 +301,124 @@ h5 {
 
 .bb-links {
     margin:auto;
+}
+
+a.mobile-menu {
+    display:none;
+}
+
+.menu {
+    background:#6f958c;
+    width:30vh;
+    position:fixed;
+    right:0;
+    top:13vh;
+    display:block;
+    z-index:999;
+    box-sizing:border-box;
+    display:none;
+}
+
+.menu a {
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    padding:20px;
+    font-weight:500;
+    font-size: 1.2em;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.menu a:hover {
+    background:#275257;
+}
+
+.menu a:last-of-type {
+    border-bottom:0;
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+    .links {
+        display:none;
+    }
+    
+    .title {
+        width:calc(100% - 30vh);
+    }
+    
+    .links2 {
+        width:30vh;
+    }
+    
+
+a.mobile-menu {
+    display:flex;
+    background:#dfefee;
+}
+    
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .topbar {
+        height:2vh;
+    }
+    
+    header {
+        height:8vh;
+        top:2vh;
+    }
+    
+    header img {
+        height:6vh;
+    }
+    
+    .title {
+        padding-left:10px;
+    }
+    
+    .links2 {
+        width:24vh;
+    }
+    
+    .links2 a {
+        width:8vh;
+    }
+    
+    .section-wrapper {
+        top:10vh;
+    }
+    
+    .menu {
+        top:10vh;
+    }
+    
+    .section span {
+        margin-right:45px;
+    }
+    
+    .section:first-of-type {
+        justify-content:space-between;
+    }
+    
+    .left {
+        width:auto;
+    }
+    
+    .right {
+        width: calc(100% - 230px - 80px)
+    }
+    
+    .left .spiel {
+        width:230px;
+        margin:20px;
+    }
+    
+    .right h1 {
+        font-size:2.5em;
+    }
+    
 }
