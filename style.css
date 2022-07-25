@@ -84,6 +84,7 @@ header h1 {
     display:inline-flex;
     align-items: center;
     height:100%;
+    box-sizing:border-box
 }
 
 .links a:hover {
