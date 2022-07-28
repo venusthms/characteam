@@ -1,1 +1,164 @@
 
+<!doctype html>
+<html>
+<head>
+
+<link rel="shortcut icon" href="https://i.imgur.com/fXlvQLm.png" />
+<title>Characteam</title>
+
+<!----- scripts ----->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="https://kit.fontawesome.com/2e832dfefc.js" crossorigin="anonymous"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comfortaa:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--HTML HERE -->
+
+
+<div class="topbar"></div>
+
+<header>
+
+<div class="title">
+<img src="https://i.imgur.com/fXlvQLm.png" />
+<h1>Characteam</h1>
+</div>
+
+<div class="links">
+
+<a href="/">Über uns</a>
+<a href="/">Warum Characteam</a>
+<a href="/">Testteam werden</a>
+</div>
+
+<div class="links2">
+<a href="/" title="Starseite"><i class="icons fa-solid fa-house"></i></a>
+<a href="mailto:hello@characteam.de" title="Kontakt"><i class="icons fa-regular fa-envelope"></i></a>
+<a class="mobile-menu" href="#" title="Menü"><i class="icons fa-solid fa-bars"></i></a>
+</div>
+
+</header>
+
+<div class="menu">
+<a href="/">Über uns</a>
+<a href="/">Warum Characteam</a>
+<a href="/">Testteam werden</a>
+</div>
+
+
+<div class="section-wrapper">
+
+<div class="section">
+
+<div class="images">
+    <img src="https://i.imgur.com/AwHwqcO.png">
+    <img src="https://i.imgur.com/AwHwqcO.png">
+</div>
+
+<div class="text">Wir sind Leonie und Anna, die Entwicklerinnen des Spiels Characteam. Uns vereint eine nerdige Leidenschaft für die Psychologie und die Liebe zu Törtchen, Eis und Waffeln.
+Leonie ist das Organisationstalent und die fleißige Biene von uns beiden. Sie hat immer alles im Kopf und weiß genau, was zu tun ist. Anna ist die kreativ-chaotische Optimistin, die heraushebt, was wir bereits geschafft haben und gleichzeitig zu Verschnaufpausen ermahnt. 
+Unsere Mission ist es, die Erkenntnisse der Psychologie in die Arbeitswelt zu bringen und dabei Spaß und Lernen zu kombinieren.
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="timeline">
+    
+    <div class="entry entry1">
+    <h4>Juni 2019</h4>
+    <b>Die Idee zu Characteam ist entstanden</b> ...in einem Seminar für positiv-psychologische Interventionen im Arbeitskontext, das wir gemeinsam in unserem Master in Psychologie mit Schwerpunkt Arbeit, Organisation und Wirtschaft belegt haben. Der Fokus lag zunächst auf Trainees und Karriereplanung.
+
+    </div>
+    
+    <div class="entry entry2">
+        <h4>September 2019</h4>
+<b>Das Spiel wurde überarbeitet</b> ...und wir haben den Fokus auf Teamentwicklung gesetzt. Die zentralen Inhalte des heutigen Characteam sind bei dieser Überarbeitung entstanden.
+
+    </div>
+    
+    <div class="entry entry3">
+    <h4>August 2020</h4>
+<b>Characteam wurde evaluiert</b> ...durch Testteams im Rahmen unserer Masterarbeit. Wir haben verschiedene Aspekte der Teamarbeit untersucht. Zum Beispiel konnten wir zeigen, dass nach dem Spielen von Characteam ein erhöhtes Teamflow- Erleben auftreten kann – das Gefühl als Team vollkommen in einer Aufgabe aufzugehen. Außerdem haben wir wertvolles inhaltliches und gestalterisches Feedback zu Characteam eingeholt.
+
+    </div>
+    
+    <div class="entry entry4">
+    <h4>Mai 2021</h4>
+<b>Auf der ersten Konferenz</b> ...präsentieren wir Characteam. Wir wurden auf der Life Improvement Science Conference angenommen und dürfen Characteam vorstellen.
+   
+    </div>
+    
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="logo">
+<h5>Characteam</h5>
+<img src="https://i.imgur.com/fXlvQLm.png"/>
+</div>
+
+<div class="b-links">
+<h5>Links</h5>
+<div class="bb-links">
+    <a href="/">Impressum</a>
+    <a href="/">Datenschutz</a>
+    <a href="mailto:hello@characteam.de">Kontakt</a>
+</div>
+</div>
+
+<div class="b-buttons">
+<h5>Mehr</h5>
+<div class="buttons">
+    <a href="https://www.instagram.com/characteam/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="b-top" title="Back to top"><i class="fa-solid fa-angle-up"></i></a>
+</div>
+</div>
+
+
+</div>
+
+<div class="copyright">
+    © 2020–2022 Characteam. All rights reserved. 
+</div>
+
+
+</div>
+
+<script>
+    $(document).ready(function(){
+ 
+    $('.b-top').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+$('.mobile-menu').click(function() {
+    $('.menu').slideToggle( "slow" );
+    $('.mobile-menu i').toggleClass('fa-bars fa-xmark');
+    return false;
+    });
+    
+   $(window).resize(function() {
+      if ( $(window).width() >= 901 ){
+       $('.menu').slideUp( "slow" );
+        $('.mobile-menu i').removeClass('fa-xmark');
+         $('.mobile-menu i').addClass('fa-bars');
+      }
+   });
+
+ 
+});
+</script>
+
+
+</body>
+</html>
