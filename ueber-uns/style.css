@@ -356,13 +356,18 @@ position:relative;
 }
 
 .entry {
-    background:#fff;
-    width:300px;
     height:auto;
     position:relative;
+    width:100%;
+}
+
+.content {
+    background:#fff;
+    width:300px;
     box-sizing:border-box;
     padding:20px;
     border-radius:3px;
+    
 }
 
 .entry:before {
@@ -458,11 +463,11 @@ h4 i {
 .entry4 { grid-area: 4 / 1 / 5 / 2; }
 
 .entry:nth-child(even):before, .entry:before {
-    left:111.2%;
+    left:calc(80% + 10% - 5.5px - 2.5px)
 }
 
 .entry:after {
-    left:100%;
+    left:80%;
 }
 
 
