@@ -173,6 +173,14 @@ header h1 {
     background-position:right bottom;
 }
 
+.section:nth-child(1) {
+    background-image: url(https://i.imgur.com/Xyz5p6X.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-x: 20px;
+    background-position-y: bottom;
+}
+
 .section:nth-child(2) {
     background:#6f958c;
 }
@@ -507,7 +515,7 @@ h4 i {
         box-sizing:border-box;
     }
     
-.section:nth-child(3) {
+.section:nth-child(3), .section:nth-child(1) {
     background-size:150px;
 }
     
