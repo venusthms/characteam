@@ -197,8 +197,8 @@ header h1 {
 
 
 .section .text {
-    width: calc(100% - 440px - 20%);
-    line-height: 20px;
+    width:40%;
+    line-height: 2.1em;
     font-size: 1.2em;
     text-align: justify;
 }
@@ -428,6 +428,17 @@ h4 i {
 }
 
 
+@media only screen and (max-width: 1050px) {
+    
+.section:nth-child(1) {
+    justify-content:space-evenly
+}
+
+ .images img {
+     width:380px;
+ }   
+}
+
 @media only screen and (max-width: 900px) {
     
     .links {
@@ -478,6 +489,23 @@ h4 i {
     border-color: transparent transparent transparent white;
     left: 80%;
 }
+
+.section:nth-child(1) {
+    flex-direction:column
+}
+    
+ .images {
+     width:100%;
+     margin-bottom:70px;
+ }
+ 
+.images img {
+    width:70%;
+}
+
+.section .text {
+    width:70%;
+}
     
 }
 
@@ -525,7 +553,14 @@ h4 i {
 .section:nth-child(3), .section:nth-child(1) {
     background-size:150px;
 }
-    
+
+.images img {
+    width:80%;
+}
+
+.section .text {
+    width:80%;
+}
     
 }
 
@@ -606,6 +641,25 @@ h4 i {
        margin:0 15px 0 0;
        font-weight:bold;
    }
+    
+    
+   .images {
+     margin:20px 0 60px 0;
+ }
+
+
+.images img {
+    width:100%;
+}
+
+.section .text {
+    width:100%;
+}
+
+.text::first-letter {
+    float:none;
+    margin-right:0;
+}
     
     
 }
