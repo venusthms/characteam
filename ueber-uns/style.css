@@ -177,16 +177,22 @@ header h1 {
     background:#6f958c;
 }
 
+.section:nth-child(1) {
+    justify-content:flex-start
+}
+
 .images {
-    width:500px;
-    margin-right:80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .images img {
     width: 500px;
     display: inline-block;
     border-radius:5px;
-    box-shadow: rgba(111, 149, 140, 0.5) -5px 5px, rgba(111, 149, 140, 0.4) -10px 10px, rgba(111, 149, 140, 0.2) -15px 15px, rgba(111, 149, 140, 0.1) -20px 20px, rgba(111, 149, 140, 0.05) -25px 25px;
+    box-shadow: rgba(204,223,220, 0.6) -5px 5px, rgba(204,223,220, 0.5) -10px 10px, rgba(204,223,220, 0.3) -15px 15px, rgba(204,223,220, 0.2) -20px 20px, rgba(204,223,220, 0.1) -25px 25px;
 }
 
 
