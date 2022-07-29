@@ -228,7 +228,9 @@ header h1 {
 }
 
 .image img {
-	width: 300px; /*größe des bildes*/
+	width: 500px; /*größe des bildes*/
+	max-width:100%;
+	box-shadow:-35px -35px 0px 6px rgba(221,237,236,.8); /*schattenfarbe und größe*/
 }
 
 .headline {
@@ -393,6 +395,14 @@ h5 {
 
 
 /**** Anpassungen für Bildschirmgrößen ****/
+@media only screen and (max-width: 1050px) {
+ 	.image img {
+     		width:380px;
+     		box-shadow:-25px -25px 0px 6px rgb(221 237 236 / 80%);
+	} 
+	
+}
+
 @media only screen and (max-width: 900px) {
 
 	.links {
@@ -412,6 +422,11 @@ h5 {
 		display: flex;
 		background: #dfefee; /*mobile menu buttonfarbe*/
 	}
+	
+	.image img {
+     		width:300px;
+     		box-shadow:-20px -20px 0px 6px rgb(221 237 236 / 80%);
+ 	}
 
 }
 
@@ -468,6 +483,7 @@ h5 {
 
 	.image {
 		width: auto;
+		margin:25px 0 10px 0;
 	}
 
 	.headline {
@@ -477,6 +493,7 @@ h5 {
 	.image img {
 		width: 230px;
 		margin: 20px;
+		box-shadow:-15px -15px 0px 6px rgb(221 237 236 / 80%);
 	}
 
 	.headline h1 {
