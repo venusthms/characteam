@@ -601,6 +601,16 @@ h5 {
 		flex-direction: column;
 		padding: 40px;
 	}
+	
+       	.image img {
+		width: 1000%;
+		margin: 0 0 20px 0;
+	}
+
+	.headline {
+		width: 100%;
+		text-align: center;
+	}
 
 
 	.footer {
