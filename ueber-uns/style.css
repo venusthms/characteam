@@ -203,6 +203,13 @@ header h1 {
     text-align: justify;
 }
 
+.text::first-letter {
+    font-size:3em;
+    color:#ccdfdc;
+    font-weight:bold;
+    float:left;
+    margin-right:5px;
+}
 
 #mobile-menu {
     display:none;
