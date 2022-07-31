@@ -265,8 +265,11 @@ header h1 {
 	color: #fff; /*schriftfarbe*/
 }
 
-.section span b { /*fetter text*/
-    	color:#fbd098;
+.section span b { /*first word*/
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .section span a { /*links*/
