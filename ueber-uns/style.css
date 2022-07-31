@@ -220,9 +220,6 @@ header h1 {
     background: #fff;
 }
 
-.timeline {
-    background:#6f958c;
-}
 
 /**** First Section (Intro) ****/
 
@@ -266,6 +263,10 @@ header h1 {
 
 
 /**** Second Section (Timeline) ****/
+.timeline {
+    background:#6f958c;
+}
+
 .timeline-wrapper {
 	position: relative;
 	display: grid;
