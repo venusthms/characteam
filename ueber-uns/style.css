@@ -594,8 +594,13 @@ h5 {
 
 	.section .text {
 		width: 80%;
+		text-align:center;
 	}
-
+	
+	.text::first-letter {
+		float: none;
+		margin-right: 0;
+	}
 
 }
 
@@ -697,11 +702,5 @@ h5 {
 	.section .text {
 		width: 100%;
 	}
-
-	.text::first-letter {
-		float: none;
-		margin-right: 0;
-	}
-
 
 }
