@@ -220,6 +220,10 @@ header h1 {
 
 
 /**** First Section (Intro) ****/
+.intro {
+	justify-content:space-evenly;
+}
+
 .image {
    	display: inline-flex;
 	justify-content: center;
@@ -234,7 +238,7 @@ header h1 {
 }
 
 .headline {
-	width: 50%;
+	width: 40%;
 }
 
 .headline h1 { /*titel*/
