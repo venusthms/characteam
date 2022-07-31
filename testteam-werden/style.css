@@ -271,7 +271,7 @@ header h1 {
 	transition: 0.2s;
 }
 
-.text .headline:hover:after {
+.text:hover .headline:after {
 	top: 0px;
 	left: 0px;
 }
