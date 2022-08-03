@@ -215,91 +215,90 @@ header h1 {
     font-size: 1.2em; /*schriftgröße*/
 }
 
-/**** First Section (Intro) ****/
+/**** First Section (Adresse) ****/
 
-.intro {
+.eins { /*hintergrundbild*/
 	justify-content: space-evenly;
-    background-image: url('https://i.imgur.com/SJg7s9W.png');
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: 70px;
+	background-image: url('https://i.imgur.com/SJg7s9W.png');
+	background-size: 300px; /*größe*/
+	background-repeat: no-repeat;
+	background-position-y: bottom; /*position*/
+	background-position-x: 70px; /*position*/
 }
 
-.adresse, .nummern {
-    line-height:2em;
+.adresse,
+.nummern {
+	line-height: 2em; /*zeilenabstand*/
 }
 
-.adresse b, .nummern b {
-    display:block;
+.adresse b,
+.nummern b {
+	display: block;
 }
 
-.adresse i, .nummern i {
-    margin-right:5px;
-    color:#6f958c;
+.adresse-wrapper,
+.kontakt-wrapper {
+	width: 290px; /*breite (kontakt + adresse)*/
 }
 
-.adresse-wrapper, .kontakt-wrapper {
-    width:290px;
+.adresse-wrapper b,
+.adresse-info {
+	background: #6f958c; /*hintergrund*/
+	color: #fff; /*farbe*/
+	border-radius: 4px; /*rundung*/
 }
 
 .adresse-wrapper b {
-    background: #6f958c;
-    margin-bottom: 15px;
-    display: block;
-    padding: 12px 15px;
-    border-radius: 4px;
-    color: #fff;
+	display: block;
+	margin-bottom: 15px;
+	padding: 12px 15px;
 }
 
 .adresse-info {
-    background: #6f958c;
-    padding: 20px;
-    border-radius: 4px;
-    line-height: 1.5em;
-    color: #fff;
-    letter-spacing: 1px;
+	padding: 20px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+}
+
+/**** Second Section (Kontakt) ****/
+
+.zwei {
+	flex-direction: column;
+	background: #6f958c;
 }
 
 .kontakt-wrapper b {
-    background: #fff;
-    margin-bottom: 15px;
-    display: block;
-    padding: 12px 15px;
-    border-radius: 4px;
+	display: block;
+	margin-bottom: 15px;
+	padding: 12px 15px;
+	background: #fff; /*hintergrundfarbe*/
+	border-radius: 4px; /*rundung*/
 }
 
 .kontakt-info {
-    background:#fff;
-    padding:20px;
-    border-radius:4px;
-    line-height:3em;
+	padding: 20px;
+	line-height: 3em;
+	background: #fff; /*hintergrundfarbe*/
+	border-radius: 4px; /*rundung*/
 }
 
-.kontakt-info i {
-    width: 30px;
-    height: 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5px;
-    background: #275257;
-    border-radius: 100%;
-    color: #fff;
-    font-size: .9em;
+.kontakt-info i { /*icons*/
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px; /*kreis größe*/
+	height: 30px; /*kreis größe*/
+	margin-right: 5px;
+	font-size: .9em; /*icon größe*/
+	background: #275257; /*hintergrundfarbe*/
+	color: #fff;/*farbe*/
+	border-radius: 100%;
 }
 
 .kontakt-info u {
-    text-decoration:none;
-    font-weight:600;
+	text-decoration: none;
+	font-weight: 600;
 }
-
-/**** Second Section (Fragen) ****/
-.fragen {
-	background: #6f958c;
-	flex-direction: column;
-}
-
 
 
 /**** Third Section (Footer) ****/
@@ -404,16 +403,8 @@ h5 {
 /**** Anpassungen für Bildschirmgrößen ****/
 @media only screen and (max-width: 1050px) {
 
-	.intro {
+	.eins {
 		justify-content: space-evenly
-	}
-
-	.images img {
-		width: 380px;
-	}
-	
-	.question {
-	    width:65%;
 	}
 }
 
@@ -441,25 +432,8 @@ h5 {
 	.section:nth-child(1) {
 		flex-direction: column
 	}
-
-	.images {
-		width: 100%;
-		margin-bottom: 70px;
-	}
-
-	.images img {
-		width: 70%;
-	}
-
-	.section .text {
-		width: 70%;
-	}
 	
-	.question {
-	    width:75%;
-	}
-	
-	.intro {
+	.eins {
 	    background-size:200px;
 	    background-position-y:50px:
 	}
@@ -511,27 +485,8 @@ h5 {
 	.section:nth-child(3) {
 		background-size: 150px;
 	}
-
-	.images img {
-		width: 80%;
-	}
-
-	.section .text {
-		width: 80%;
-		text-align:center;
-	}
 	
-	.question {
-	    width:90%;
-	}
-	
-	.q:before {
-	    width:35px;
-	    height:35px;
-	    left:-47px;
-	}
-	
-	.intro {
+	.eins {
 	    background-size: 150px;
 	    background-position-x:left;
 	}
@@ -620,37 +575,10 @@ h5 {
 		margin: 0 15px 0 0;
 		font-weight: bold;
 	}
-
-	.section .text {
-		text-align: center;
-	}
-
-	.images {
-		margin: 20px 0 60px 0;
-	}
-
-
-	.images img {
-		width: 100%;
-	}
-
-	.section .text {
-		width: 100%;
-	}
 	
-	.question {
-	    width:100%;
-	}
-	
-	.q:before {
-	    left:auto;
-	    right:20px;
-	    top:13px;
-	}
-	
-.adresse-wrapper, .kontakt-wrapper {
-    width:100%;
-}
-
+    .adresse-wrapper,
+    .kontakt-wrapper {
+	width: 100%;
+    }
 
 }
